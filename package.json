@@ -1,0 +1,48 @@
+{
+  "name": "proxifix-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit",
+    "cf:dev": "wrangler dev --config wrangler.worker.jsonc",
+    "cf:deploy": "wrangler deploy --config wrangler.worker.jsonc",
+    "cf:pages:deploy": "wrangler pages deploy dist --project-name proxifix-web",
+    "cf:types": "wrangler types",
+    "cf:secrets:setup": "node scripts/setup-worker-secrets.mjs",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "verify:live": "node scripts/regression-live.mjs",
+    "verify:live:prod": "BASE_URL=https://proxifix-api.karlaustinpavia17.workers.dev node scripts/regression-live.mjs",
+    "verify:smoke:prod": "BASE_URL=https://proxifix-api.karlaustinpavia17.workers.dev node scripts/post-deploy-smoke.mjs"
+  },
+  "dependencies": {
+    "@fontsource/manrope": "^5.2.7",
+    "@fontsource/outfit": "^5.2.6",
+    "@hono/zod-validator": "^0.7.6",
+    "drizzle-orm": "^0.45.2",
+    "hono": "^4.12.10",
+    "leaflet": "^1.9.4",
+    "lucide-vue-next": "^0.542.0",
+    "pinia": "^3.0.3",
+    "postgres": "^3.4.8",
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260405.1",
+    "@tailwindcss/vite": "^4.1.13",
+    "@types/leaflet": "^1.9.20",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "drizzle-kit": "^0.31.10",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.5",
+    "vue-tsc": "^3.0.6",
+    "wrangler": "^4.80.0"
+  }
+}

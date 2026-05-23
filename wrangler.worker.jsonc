@@ -1,0 +1,25 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "proxifix-api",
+  "main": "worker/src/index.ts",
+  "compatibility_date": "2026-04-05",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "dev": {
+    "port": 8787
+  },
+  "vars": {
+    "APP_NAME": "ProxiFix",
+    "APP_ORIGIN": "https://proxifix-web.pages.dev",
+    "ALLOWED_ORIGINS": "http://localhost:5173,https://proxifix-web.pages.dev,https://*.proxifix-web.pages.dev",
+    "GOOGLE_CLIENT_ID": "916892067051-mjcmqfqvpqqn7s8teal6d0104a0g4qbv.apps.googleusercontent.com"
+  },
+  "hyperdrive": [
+    {
+      "binding": "PROXIFIX_DB",
+      "id": "22d52b4822e649b0a21f95abe0c74ecc"
+    }
+  ]
+}

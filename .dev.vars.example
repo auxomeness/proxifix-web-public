@@ -1,0 +1,7 @@
+APP_NAME=ProxiFix
+APP_ORIGIN=http://localhost:5173
+DATABASE_URL=postgres://postgres:postgres@127.0.0.1:5432/proxifix
+GOOGLE_CLIENT_ID=916892067051-mjcmqfqvpqqn7s8teal6d0104a0g4qbv.apps.googleusercontent.com
+JWT_SECRET=replace-me-with-a-long-random-secret
+ADMIN_EMAIL_ALLOWLIST=karlaustinpavia17@gmail.com,admin.ava@proxifix.test,admin.liam@proxifix.test,admin.sofia@proxifix.test
+SEED_TOKEN=replace-me-with-a-seed-token
