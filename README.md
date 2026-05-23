@@ -146,7 +146,7 @@ ProxiFix includes several production-oriented controls:
 - Explicit location privacy states for client address disclosure.
 - Secret handling through environment variables and Wrangler secrets.
 
-See [PRODUCTION_HARDENING.md](PRODUCTION_HARDENING.md) and [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md) for operational guidance.
+Operational guidance should stay aligned with the deployed environment, especially secret rotation, alert routing, and rollback steps.
 
 ## Public Repo Safety
 
