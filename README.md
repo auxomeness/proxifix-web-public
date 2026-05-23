@@ -172,4 +172,4 @@ ProxiFix is an active product prototype with end-to-end flows for client, worker
 
 ## License
 
-No license has been declared yet. Add a license before accepting external contributions or reusing this project in another context.
+This project is licensed under the GNU General Public License v3.0. See [LICENSE](LICENSE) for the full terms.
